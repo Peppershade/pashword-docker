@@ -3,7 +3,7 @@ FROM alpine:latest
 WORKDIR /root/pashword
 
 # Install packages
-RUN apk get git npm
+RUN apk add git npm
 
 # Clone the repository
 RUN git clone https://github.com/NayamAmarshe/pashword.git
