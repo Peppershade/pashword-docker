@@ -6,13 +6,13 @@ WORKDIR /root/pashword
 RUN apk get git npm
 
 # Clone the repository
-git clone https://github.com/NayamAmarshe/pashword.git
+RUN git clone https://github.com/NayamAmarshe/pashword.git
 
 # Change Directory
-cd pashword
+RUN cd pashword
 
 # Install dependencies
-npm install
+RUN npm install
 
 ENV PORT 3000
 EXPOSE 3000
